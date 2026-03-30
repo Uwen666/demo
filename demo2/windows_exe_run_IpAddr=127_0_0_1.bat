@@ -1,0 +1,66 @@
+start cmd /k blockEmulator.exe -n 0 -N 4 -s 0 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 1 -N 4 -s 0 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 2 -N 4 -s 0 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 3 -N 4 -s 0 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 0 -N 4 -s 1 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 1 -N 4 -s 1 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 2 -N 4 -s 1 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 3 -N 4 -s 1 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 0 -N 4 -s 2 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 1 -N 4 -s 2 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 2 -N 4 -s 2 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 3 -N 4 -s 2 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 0 -N 4 -s 3 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 1 -N 4 -s 3 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 2 -N 4 -s 3 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 3 -N 4 -s 3 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 0 -N 4 -s 4 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 1 -N 4 -s 4 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 2 -N 4 -s 4 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 3 -N 4 -s 4 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 0 -N 4 -s 5 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 1 -N 4 -s 5 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 2 -N 4 -s 5 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 3 -N 4 -s 5 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 0 -N 4 -s 6 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 1 -N 4 -s 6 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 2 -N 4 -s 6 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 3 -N 4 -s 6 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 0 -N 4 -s 7 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 1 -N 4 -s 7 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 2 -N 4 -s 7 -S 8 & 
+
+start cmd /k blockEmulator.exe -n 3 -N 4 -s 7 -S 8 & 
+
+start cmd /k blockEmulator.exe -c -N 4 -S 8 & 
+

@@ -1,0 +1,3 @@
+S13N3: 2026/03/27 09:57:11 messageHandle.go:18: S13N3 : storage/standby role, waiting for potential activation by reconfiguration
+S13N3: 2026/03/27 10:04:55 pbft.go:340: handling stop message
+S13N3: 2026/03/27 10:04:55 pbft.go:345: handled stop message in TCPListen Routine

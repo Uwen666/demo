@@ -1,0 +1,23 @@
+=============== Mar 27, 2026 (CST) ===============
+09:57:11.274422 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:57:11.282166 db@open opening
+09:57:11.284184 version@stat F·[] S·0B[] Sc·[]
+09:57:11.286646 db@janitor F·2 G·0
+09:57:11.286688 db@open done T·3.219352ms
+09:59:19.373915 memdb@flush N·24083 S·3MiB
+09:59:19.396239 memdb@flush created L0@3 N·24083 S·3MiB "\x00\x00Z..\xa8*a,v11237":"\xff\xf5\x03.. m\x02,v16556"
+09:59:19.396280 version@stat F·[1] S·3MiB[3MiB] Sc·[0.25]
+09:59:19.397632 memdb@flush committed F·1 T·23.676867ms
+09:59:19.398556 journal@remove removed @1
+10:01:17.276911 memdb@flush N·24016 S·3MiB
+10:01:17.300539 memdb@flush created L0@5 N·24016 S·3MiB "\x00\x00<..\xed\x14\x80,v38341":"\xff\xff\xba..\x1bK\x9f,v29730"
+10:01:17.300579 version@stat F·[2] S·6MiB[6MiB] Sc·[0.50]
+10:01:17.302096 memdb@flush committed F·1 T·25.130653ms
+10:01:17.303644 journal@remove removed @2
+10:03:42.419506 memdb@flush N·23857 S·3MiB
+10:03:42.457134 memdb@flush created L0@7 N·23857 S·3MiB "\x00\x00\xe4..mQ\xea,v58870":"\xff\xfd\xeb..A|(,v62464"
+10:03:42.457223 version@stat F·[3] S·9MiB[9MiB] Sc·[0.75]
+10:03:42.459460 memdb@flush committed F·1 T·39.889685ms
+10:03:42.461206 journal@remove removed @4
+10:04:55.234211 db@close closing
+10:04:55.235699 db@close done T·1.471093ms

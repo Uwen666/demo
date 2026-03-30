@@ -1,0 +1,494 @@
+Config: {ConsensusMethod:0 PbftViewChangeTimeOut:20000 ExpDataRootDir:expTest BlockInterval:4000 BlocksizeInBytes:200000 MaxBlockSizeGlobal:1000 UseBlocksizeInBytes:0 InjectSpeed:2000 TotalDataSize:160000 TxBatchSize:16000 BrokerNum:10 RelayWithMerkleProof:0 DatasetFile:./selectedTxs_300K.csv ReconfigTimeGap:10 Delay:-1 JitterRange:-1 Bandwidth:10000000}
+Supervisor: 2026/03/06 19:34:49 committee_clpa_broker.go:263: received from shard 0 in epoch 0. (curEpoch=0)
+Supervisor: 2026/03/06 19:34:49 committee_clpa_broker.go:263: received from shard 1 in epoch 0. (curEpoch=0)
+Supervisor: 2026/03/06 19:34:50 committee_clpa_broker.go:263: received from shard 2 in epoch 0. (curEpoch=0)
+Supervisor: 2026/03/06 19:34:50 committee_clpa_broker.go:263: received from shard 3 in epoch 0. (curEpoch=0)
+Supervisor: 2026/03/06 19:34:51 supervisor.go:180: === Generating initial supervision topology (Epoch 0) ===
+Supervisor: 2026/03/06 19:34:51 supervisor.go:561: [Epoch 0] Main Relation: Shard 3 -> Shard 1
+Supervisor: 2026/03/06 19:34:51 supervisor.go:561: [Epoch 0] Main Relation: Shard 1 -> Shard 2
+Supervisor: 2026/03/06 19:34:51 supervisor.go:561: [Epoch 0] Main Relation: Shard 2 -> Shard 0
+Supervisor: 2026/03/06 19:34:51 supervisor.go:561: [Epoch 0] Main Relation: Shard 0 -> Shard 3
+Supervisor: 2026/03/06 19:34:51 supervisor.go:595: [Epoch 0] BSG for Shard 2: [3 0] (Grandparent: 3)
+Supervisor: 2026/03/06 19:34:51 supervisor.go:595: [Epoch 0] BSG for Shard 0: [1 3] (Grandparent: 1)
+Supervisor: 2026/03/06 19:34:51 supervisor.go:595: [Epoch 0] BSG for Shard 3: [2 1] (Grandparent: 2)
+Supervisor: 2026/03/06 19:34:51 supervisor.go:595: [Epoch 0] BSG for Shard 1: [0 2] (Grandparent: 0)
+broker receive ctx  5132
+Supervisor: 2026/03/06 19:34:53 committee_clpa_broker.go:263: received from shard 0 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx1 len  1000
+Supervisor: 2026/03/06 19:34:53 committee_clpa_broker.go:263: received from shard 1 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx1 len  1000
+Supervisor: 2026/03/06 19:34:54 committee_clpa_broker.go:263: received from shard 2 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx1 len  847
+Supervisor: 2026/03/06 19:34:54 committee_clpa_broker.go:263: received from shard 3 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx1 len  1000
+BrokerType1Mes received by shard,  add brokerTx1 len  5132
+broker tx2 add to pool len  1000
+broker tx2 add to pool len  1000
+broker tx2 add to pool len  847
+receive confirm  brokerTx2 len  153
+finish ctx with adding tx1 and tx2 to txpool,len 153
+broker tx2 add to pool len  1000
+Supervisor: 2026/03/06 19:34:57 committee_clpa_broker.go:263: received from shard 0 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx1 len  658
+Supervisor: 2026/03/06 19:34:57 committee_clpa_broker.go:263: received from shard 1 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx1 len  296
+Supervisor: 2026/03/06 19:34:58 committee_clpa_broker.go:263: received from shard 2 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx2 len  665
+finish ctx with adding tx1 and tx2 to txpool,len 665
+Supervisor: 2026/03/06 19:34:58 committee_clpa_broker.go:263: received from shard 3 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx1 len  331
+broker tx2 add to pool len  658
+receive confirm  brokerTx2 len  342
+finish ctx with adding tx1 and tx2 to txpool,len 342
+broker tx2 add to pool len  296
+receive confirm  brokerTx2 len  704
+finish ctx with adding tx1 and tx2 to txpool,len 704
+broker tx2 add to pool len  331
+receive confirm  brokerTx2 len  669
+finish ctx with adding tx1 and tx2 to txpool,len 669
+broker receive ctx  3908
+Supervisor: 2026/03/06 19:35:01 committee_clpa_broker.go:263: received from shard 0 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx2 len  1000
+finish ctx with adding tx1 and tx2 to txpool,len 1000
+Supervisor: 2026/03/06 19:35:01 committee_clpa_broker.go:263: received from shard 1 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx2 len  170
+finish ctx with adding tx1 and tx2 to txpool,len 170
+Supervisor: 2026/03/06 19:35:02 committee_clpa_broker.go:263: received from shard 2 in epoch 0. (curEpoch=0)
+Supervisor: 2026/03/06 19:35:02 committee_clpa_broker.go:263: received from shard 3 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx2 len  114
+finish ctx with adding tx1 and tx2 to txpool,len 114
+BrokerType1Mes received by shard,  add brokerTx1 len  3908
+Supervisor: 2026/03/06 19:35:05 committee_clpa_broker.go:263: received from shard 0 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx2 len  30
+finish ctx with adding tx1 and tx2 to txpool,len 30
+Supervisor: 2026/03/06 19:35:05 committee_clpa_broker.go:263: received from shard 1 in epoch 0. (curEpoch=0)
+Supervisor: 2026/03/06 19:35:06 committee_clpa_broker.go:263: received from shard 2 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx2 len  417
+finish ctx with adding tx1 and tx2 to txpool,len 417
+Supervisor: 2026/03/06 19:35:06 committee_clpa_broker.go:263: received from shard 3 in epoch 0. (curEpoch=0)
+Supervisor: 2026/03/06 19:35:09 committee_clpa_broker.go:185: [DEBUG] CLPA timer fired! elapsed=18.3230587s, clpaFreq=10 s, triggering partition clpaCnt=1
+Before running CLPA, cross-shard edge number: 5132
+Supervisor: 2026/03/06 19:35:09 committee_clpa_broker.go:263: received from shard 0 in epoch 0. (curEpoch=0)
+Supervisor: 2026/03/06 19:35:09 committee_clpa_broker.go:263: received from shard 1 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx2 len  336
+finish ctx with adding tx1 and tx2 to txpool,len 336
+Supervisor: 2026/03/06 19:35:10 committee_clpa_broker.go:263: received from shard 2 in epoch 0. (curEpoch=0)
+receive confirm  brokerTx1 len  525
+0 has vertexs: 1731
+1 has vertexs: 1327
+2 has vertexs: 1184
+3 has vertexs: 1227
+After running CLPA, cross-shard edge number: 369
+Supervisor: 2026/03/06 19:35:10 committee_clpa_broker.go:251: Supervisor: all partition map message has been sent. 
+Supervisor: 2026/03/06 19:35:10 committee_clpa_broker.go:197: [DEBUG] Waiting for curEpoch to reach 1 (current=0)
+broker tx2 add to pool len  525
+Supervisor: 2026/03/06 19:35:11 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=0, target=1
+Supervisor: 2026/03/06 19:35:12 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=0, target=1
+Supervisor: 2026/03/06 19:35:13 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=0, target=1
+broker receive ctx  13
+Supervisor: 2026/03/06 19:35:14 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=0, target=1
+broker receive ctx  80
+broker receive ctx  273
+broker receive ctx  87
+BrokerType1Mes received by shard,  add brokerTx1 len  13
+Supervisor: 2026/03/06 19:35:15 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=0, target=1
+BrokerType1Mes received by shard,  add brokerTx1 len  80
+BrokerType1Mes received by shard,  add brokerTx1 len  273
+BrokerType1Mes received by shard,  add brokerTx1 len  87
+Supervisor: 2026/03/06 19:35:16 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=0, target=1
+Supervisor: 2026/03/06 19:35:16 committee_clpa_broker.go:263: received from shard 3 in epoch 1. (curEpoch=0)
+Supervisor: 2026/03/06 19:35:16 committee_clpa_broker.go:265: [DEBUG] curEpoch updated to 1 by shard 3
+receive confirm  brokerTx1 len  210
+Supervisor: 2026/03/06 19:35:17 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=1, target=1
+Supervisor: 2026/03/06 19:35:17 committee_clpa_broker.go:203: Next CLPA epoch begins. 
+broker tx2 add to pool len  210
+receive confirm  brokerTx2 len  110
+finish ctx with adding tx1 and tx2 to txpool,len 110
+broker receive ctx  2569
+Supervisor: 2026/03/06 19:35:18 committee_clpa_broker.go:263: received from shard 0 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx2 len  54
+finish ctx with adding tx1 and tx2 to txpool,len 54
+Supervisor: 2026/03/06 19:35:18 committee_clpa_broker.go:263: received from shard 1 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  617
+Supervisor: 2026/03/06 19:35:18 committee_clpa_broker.go:263: received from shard 2 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  152
+Supervisor: 2026/03/06 19:35:18 committee_clpa_broker.go:263: received from shard 3 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  671
+broker tx2 add to pool len  617
+broker tx2 add to pool len  152
+broker tx2 add to pool len  671
+BrokerType1Mes received by shard,  add brokerTx1 len  2569
+Supervisor: 2026/03/06 19:35:21 committee_clpa_broker.go:263: received from shard 0 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  823
+Supervisor: 2026/03/06 19:35:21 committee_clpa_broker.go:263: received from shard 1 in epoch 1. (curEpoch=1)
+Supervisor: 2026/03/06 19:35:22 committee_clpa_broker.go:263: received from shard 2 in epoch 1. (curEpoch=1)
+Supervisor: 2026/03/06 19:35:22 committee_clpa_broker.go:263: received from shard 3 in epoch 1. (curEpoch=1)
+broker tx2 add to pool len  823
+Supervisor: 2026/03/06 19:35:25 committee_clpa_broker.go:263: received from shard 0 in epoch 1. (curEpoch=1)
+Supervisor: 2026/03/06 19:35:25 committee_clpa_broker.go:263: received from shard 1 in epoch 1. (curEpoch=1)
+Supervisor: 2026/03/06 19:35:26 committee_clpa_broker.go:263: received from shard 2 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  105
+Supervisor: 2026/03/06 19:35:26 committee_clpa_broker.go:263: received from shard 3 in epoch 1. (curEpoch=1)
+broker receive ctx  2645
+broker tx2 add to pool len  105
+receive confirm  brokerTx2 len  52
+finish ctx with adding tx1 and tx2 to txpool,len 52
+BrokerType1Mes received by shard,  add brokerTx1 len  2645
+Supervisor: 2026/03/06 19:35:29 committee_clpa_broker.go:263: received from shard 0 in epoch 1. (curEpoch=1)
+Supervisor: 2026/03/06 19:35:29 committee_clpa_broker.go:263: received from shard 1 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  203
+Supervisor: 2026/03/06 19:35:30 committee_clpa_broker.go:263: received from shard 2 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  731
+Supervisor: 2026/03/06 19:35:30 committee_clpa_broker.go:263: received from shard 3 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  160
+broker tx2 add to pool len  203
+receive confirm  brokerTx2 len  195
+finish ctx with adding tx1 and tx2 to txpool,len 195
+broker tx2 add to pool len  731
+receive confirm  brokerTx2 len  82
+finish ctx with adding tx1 and tx2 to txpool,len 82
+broker tx2 add to pool len  160
+receive confirm  brokerTx2 len  198
+finish ctx with adding tx1 and tx2 to txpool,len 198
+Supervisor: 2026/03/06 19:35:33 committee_clpa_broker.go:263: received from shard 0 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx2 len  98
+finish ctx with adding tx1 and tx2 to txpool,len 98
+Supervisor: 2026/03/06 19:35:33 committee_clpa_broker.go:263: received from shard 1 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  685
+Supervisor: 2026/03/06 19:35:34 committee_clpa_broker.go:263: received from shard 2 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  266
+Supervisor: 2026/03/06 19:35:34 committee_clpa_broker.go:263: received from shard 3 in epoch 1. (curEpoch=1)
+receive confirm  brokerTx1 len  662
+broker tx2 add to pool len  685
+receive confirm  brokerTx2 len  290
+finish ctx with adding tx1 and tx2 to txpool,len 290
+broker tx2 add to pool len  266
+receive confirm  brokerTx2 len  250
+finish ctx with adding tx1 and tx2 to txpool,len 250
+broker tx2 add to pool len  662
+receive confirm  brokerTx2 len  269
+finish ctx with adding tx1 and tx2 to txpool,len 269
+Supervisor: 2026/03/06 19:35:36 committee_clpa_broker.go:185: [DEBUG] CLPA timer fired! elapsed=18.8435645s, clpaFreq=10 s, triggering partition clpaCnt=2
+Before running CLPA, cross-shard edge number: 5037
+0 has vertexs: 1837
+1 has vertexs: 1326
+2 has vertexs: 1680
+3 has vertexs: 1628
+After running CLPA, cross-shard edge number: 456
+Supervisor: 2026/03/06 19:35:36 committee_clpa_broker.go:251: Supervisor: all partition map message has been sent. 
+Supervisor: 2026/03/06 19:35:36 committee_clpa_broker.go:197: [DEBUG] Waiting for curEpoch to reach 2 (current=1)
+Supervisor: 2026/03/06 19:35:37 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=1, target=2
+broker receive ctx  60
+Supervisor: 2026/03/06 19:35:38 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=1, target=2
+broker receive ctx  87
+broker receive ctx  96
+broker receive ctx  111
+BrokerType1Mes received by shard,  add brokerTx1 len  60
+Supervisor: 2026/03/06 19:35:39 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=1, target=2
+BrokerType1Mes received by shard,  add brokerTx1 len  87
+BrokerType1Mes received by shard,  add brokerTx1 len  96
+BrokerType1Mes received by shard,  add brokerTx1 len  111
+Supervisor: 2026/03/06 19:35:40 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=1, target=2
+Supervisor: 2026/03/06 19:35:41 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=1, target=2
+Supervisor: 2026/03/06 19:35:41 committee_clpa_broker.go:263: received from shard 0 in epoch 2. (curEpoch=1)
+Supervisor: 2026/03/06 19:35:41 committee_clpa_broker.go:265: [DEBUG] curEpoch updated to 2 by shard 0
+receive confirm  brokerTx1 len  490
+Supervisor: 2026/03/06 19:35:41 committee_clpa_broker.go:263: received from shard 1 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx1 len  6
+Supervisor: 2026/03/06 19:35:42 committee_clpa_broker.go:263: received from shard 2 in epoch 2. (curEpoch=2)
+Supervisor: 2026/03/06 19:35:42 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=2, target=2
+Supervisor: 2026/03/06 19:35:42 committee_clpa_broker.go:203: Next CLPA epoch begins. 
+Supervisor: 2026/03/06 19:35:42 committee_clpa_broker.go:263: received from shard 3 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx1 len  152
+broker receive ctx  2662
+broker tx2 add to pool len  490
+receive confirm  brokerTx2 len  383
+finish ctx with adding tx1 and tx2 to txpool,len 383
+broker tx2 add to pool len  6
+broker tx2 add to pool len  152
+receive confirm  brokerTx2 len  115
+finish ctx with adding tx1 and tx2 to txpool,len 115
+BrokerType1Mes received by shard,  add brokerTx1 len  2662
+Supervisor: 2026/03/06 19:35:45 committee_clpa_broker.go:263: received from shard 0 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx1 len  305
+Supervisor: 2026/03/06 19:35:45 committee_clpa_broker.go:263: received from shard 1 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx2 len  80
+finish ctx with adding tx1 and tx2 to txpool,len 80
+Supervisor: 2026/03/06 19:35:46 committee_clpa_broker.go:263: received from shard 2 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx2 len  65
+finish ctx with adding tx1 and tx2 to txpool,len 65
+Supervisor: 2026/03/06 19:35:46 committee_clpa_broker.go:263: received from shard 3 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx2 len  111
+finish ctx with adding tx1 and tx2 to txpool,len 111
+broker tx2 add to pool len  305
+receive confirm  brokerTx2 len  293
+finish ctx with adding tx1 and tx2 to txpool,len 293
+Supervisor: 2026/03/06 19:35:49 committee_clpa_broker.go:263: received from shard 0 in epoch 2. (curEpoch=2)
+Supervisor: 2026/03/06 19:35:49 committee_clpa_broker.go:263: received from shard 1 in epoch 2. (curEpoch=2)
+Supervisor: 2026/03/06 19:35:50 committee_clpa_broker.go:263: received from shard 2 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx1 len  149
+Supervisor: 2026/03/06 19:35:50 committee_clpa_broker.go:263: received from shard 3 in epoch 2. (curEpoch=2)
+broker tx2 add to pool len  149
+broker receive ctx  2328
+BrokerType1Mes received by shard,  add brokerTx1 len  2328
+Supervisor: 2026/03/06 19:35:53 committee_clpa_broker.go:263: received from shard 0 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx2 len  86
+finish ctx with adding tx1 and tx2 to txpool,len 86
+Supervisor: 2026/03/06 19:35:53 committee_clpa_broker.go:263: received from shard 1 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx1 len  520
+Supervisor: 2026/03/06 19:35:54 committee_clpa_broker.go:263: received from shard 2 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx1 len  410
+Supervisor: 2026/03/06 19:35:54 committee_clpa_broker.go:263: received from shard 3 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx1 len  506
+broker tx2 add to pool len  520
+receive confirm  brokerTx2 len  5
+finish ctx with adding tx1 and tx2 to txpool,len 5
+broker tx2 add to pool len  410
+receive confirm  brokerTx2 len  25
+finish ctx with adding tx1 and tx2 to txpool,len 25
+broker tx2 add to pool len  506
+receive confirm  brokerTx2 len  6
+finish ctx with adding tx1 and tx2 to txpool,len 6
+Supervisor: 2026/03/06 19:35:57 committee_clpa_broker.go:263: received from shard 0 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx1 len  102
+Supervisor: 2026/03/06 19:35:57 committee_clpa_broker.go:263: received from shard 1 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx2 len  88
+finish ctx with adding tx1 and tx2 to txpool,len 88
+Supervisor: 2026/03/06 19:35:58 committee_clpa_broker.go:263: received from shard 2 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx2 len  186
+finish ctx with adding tx1 and tx2 to txpool,len 186
+Supervisor: 2026/03/06 19:35:58 committee_clpa_broker.go:263: received from shard 3 in epoch 2. (curEpoch=2)
+receive confirm  brokerTx2 len  7
+finish ctx with adding tx1 and tx2 to txpool,len 7
+broker tx2 add to pool len  102
+receive confirm  brokerTx2 len  8
+finish ctx with adding tx1 and tx2 to txpool,len 8
+Supervisor: 2026/03/06 19:36:00 committee_clpa_broker.go:185: [DEBUG] CLPA timer fired! elapsed=18.4630837s, clpaFreq=10 s, triggering partition clpaCnt=3
+Before running CLPA, cross-shard edge number: 2219
+0 has vertexs: 1112
+1 has vertexs: 1079
+2 has vertexs: 1165
+3 has vertexs: 1169
+After running CLPA, cross-shard edge number: 189
+Supervisor: 2026/03/06 19:36:01 committee_clpa_broker.go:251: Supervisor: all partition map message has been sent. 
+Supervisor: 2026/03/06 19:36:01 committee_clpa_broker.go:197: [DEBUG] Waiting for curEpoch to reach 3 (current=2)
+Supervisor: 2026/03/06 19:36:02 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=2, target=3
+broker receive ctx  61
+broker receive ctx  57
+broker receive ctx  78
+Supervisor: 2026/03/06 19:36:03 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=2, target=3
+broker receive ctx  164
+BrokerType1Mes received by shard,  add brokerTx1 len  61
+BrokerType1Mes received by shard,  add brokerTx1 len  57
+BrokerType1Mes received by shard,  add brokerTx1 len  78
+Supervisor: 2026/03/06 19:36:04 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=2, target=3
+BrokerType1Mes received by shard,  add brokerTx1 len  164
+Supervisor: 2026/03/06 19:36:05 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=2, target=3
+Supervisor: 2026/03/06 19:36:05 committee_clpa_broker.go:263: received from shard 0 in epoch 3. (curEpoch=2)
+Supervisor: 2026/03/06 19:36:05 committee_clpa_broker.go:265: [DEBUG] curEpoch updated to 3 by shard 0
+receive confirm  brokerTx1 len  493
+Supervisor: 2026/03/06 19:36:05 committee_clpa_broker.go:263: received from shard 1 in epoch 3. (curEpoch=3)
+Supervisor: 2026/03/06 19:36:06 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=3, target=3
+Supervisor: 2026/03/06 19:36:06 committee_clpa_broker.go:203: Next CLPA epoch begins. 
+Supervisor: 2026/03/06 19:36:06 committee_clpa_broker.go:263: received from shard 2 in epoch 3. (curEpoch=3)
+broker receive ctx  1437
+Supervisor: 2026/03/06 19:36:06 committee_clpa_broker.go:263: received from shard 3 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx2 len  57
+finish ctx with adding tx1 and tx2 to txpool,len 57
+broker tx2 add to pool len  493
+receive confirm  brokerTx2 len  5
+finish ctx with adding tx1 and tx2 to txpool,len 5
+BrokerType1Mes received by shard,  add brokerTx1 len  1437
+Supervisor: 2026/03/06 19:36:09 committee_clpa_broker.go:263: received from shard 0 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx2 len  63
+finish ctx with adding tx1 and tx2 to txpool,len 63
+Supervisor: 2026/03/06 19:36:09 committee_clpa_broker.go:263: received from shard 1 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  85
+Supervisor: 2026/03/06 19:36:10 committee_clpa_broker.go:263: received from shard 2 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  4
+Supervisor: 2026/03/06 19:36:10 committee_clpa_broker.go:263: received from shard 3 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx2 len  61
+finish ctx with adding tx1 and tx2 to txpool,len 61
+broker tx2 add to pool len  85
+receive confirm  brokerTx2 len  84
+finish ctx with adding tx1 and tx2 to txpool,len 84
+broker tx2 add to pool len  4
+receive confirm  brokerTx2 len  167
+finish ctx with adding tx1 and tx2 to txpool,len 167
+Supervisor: 2026/03/06 19:36:13 committee_clpa_broker.go:263: received from shard 0 in epoch 3. (curEpoch=3)
+Supervisor: 2026/03/06 19:36:14 committee_clpa_broker.go:263: received from shard 1 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  214
+Supervisor: 2026/03/06 19:36:14 committee_clpa_broker.go:263: received from shard 2 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  190
+Supervisor: 2026/03/06 19:36:14 committee_clpa_broker.go:263: received from shard 3 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  162
+broker tx2 add to pool len  214
+receive confirm  brokerTx2 len  653
+finish ctx with adding tx1 and tx2 to txpool,len 653
+broker tx2 add to pool len  190
+receive confirm  brokerTx2 len  628
+finish ctx with adding tx1 and tx2 to txpool,len 628
+broker tx2 add to pool len  162
+receive confirm  brokerTx2 len  383
+finish ctx with adding tx1 and tx2 to txpool,len 383
+broker receive ctx  1901
+BrokerType1Mes received by shard,  add brokerTx1 len  1901
+Supervisor: 2026/03/06 19:36:18 committee_clpa_broker.go:263: received from shard 0 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  16
+Supervisor: 2026/03/06 19:36:18 committee_clpa_broker.go:263: received from shard 1 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  237
+Supervisor: 2026/03/06 19:36:18 committee_clpa_broker.go:263: received from shard 2 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  667
+Supervisor: 2026/03/06 19:36:18 committee_clpa_broker.go:263: received from shard 3 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  487
+broker tx2 add to pool len  16
+receive confirm  brokerTx2 len  144
+finish ctx with adding tx1 and tx2 to txpool,len 144
+broker tx2 add to pool len  237
+broker tx2 add to pool len  667
+receive confirm  brokerTx2 len  207
+finish ctx with adding tx1 and tx2 to txpool,len 207
+broker tx2 add to pool len  487
+receive confirm  brokerTx2 len  377
+finish ctx with adding tx1 and tx2 to txpool,len 377
+Supervisor: 2026/03/06 19:36:21 committee_clpa_broker.go:263: received from shard 0 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  238
+Supervisor: 2026/03/06 19:36:21 committee_clpa_broker.go:263: received from shard 1 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx2 len  15
+finish ctx with adding tx1 and tx2 to txpool,len 15
+Supervisor: 2026/03/06 19:36:22 committee_clpa_broker.go:263: received from shard 2 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx2 len  33
+finish ctx with adding tx1 and tx2 to txpool,len 33
+Supervisor: 2026/03/06 19:36:22 committee_clpa_broker.go:263: received from shard 3 in epoch 3. (curEpoch=3)
+receive confirm  brokerTx1 len  331
+broker tx2 add to pool len  238
+receive confirm  brokerTx2 len  568
+finish ctx with adding tx1 and tx2 to txpool,len 568
+broker tx2 add to pool len  331
+Supervisor: 2026/03/06 19:36:24 committee_clpa_broker.go:185: [DEBUG] CLPA timer fired! elapsed=18.5187276s, clpaFreq=10 s, triggering partition clpaCnt=4
+Before running CLPA, cross-shard edge number: 2556
+0 has vertexs: 1037
+1 has vertexs: 1127
+2 has vertexs: 1218
+3 has vertexs: 1253
+After running CLPA, cross-shard edge number: 207
+Supervisor: 2026/03/06 19:36:24 committee_clpa_broker.go:251: Supervisor: all partition map message has been sent. 
+Supervisor: 2026/03/06 19:36:24 committee_clpa_broker.go:197: [DEBUG] Waiting for curEpoch to reach 4 (current=3)
+Supervisor: 2026/03/06 19:36:25 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=3, target=4
+broker receive ctx  171
+broker receive ctx  125
+Supervisor: 2026/03/06 19:36:26 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=3, target=4
+broker receive ctx  56
+broker receive ctx  130
+BrokerType1Mes received by shard,  add brokerTx1 len  171
+BrokerType1Mes received by shard,  add brokerTx1 len  125
+Supervisor: 2026/03/06 19:36:27 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=3, target=4
+BrokerType1Mes received by shard,  add brokerTx1 len  56
+BrokerType1Mes received by shard,  add brokerTx1 len  130
+Supervisor: 2026/03/06 19:36:28 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=3, target=4
+Supervisor: 2026/03/06 19:36:29 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=3, target=4
+Supervisor: 2026/03/06 19:36:29 committee_clpa_broker.go:263: received from shard 0 in epoch 4. (curEpoch=3)
+Supervisor: 2026/03/06 19:36:29 committee_clpa_broker.go:265: [DEBUG] curEpoch updated to 4 by shard 0
+receive confirm  brokerTx1 len  588
+Supervisor: 2026/03/06 19:36:29 committee_clpa_broker.go:263: received from shard 1 in epoch 4. (curEpoch=4)
+Supervisor: 2026/03/06 19:36:30 committee_clpa_broker.go:263: received from shard 2 in epoch 4. (curEpoch=4)
+Supervisor: 2026/03/06 19:36:30 committee_clpa_broker.go:263: received from shard 3 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx2 len  22
+finish ctx with adding tx1 and tx2 to txpool,len 22
+Supervisor: 2026/03/06 19:36:30 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=4, target=4
+Supervisor: 2026/03/06 19:36:30 committee_clpa_broker.go:203: Next CLPA epoch begins. 
+broker tx2 add to pool len  588
+broker receive ctx  1791
+BrokerType1Mes received by shard,  add brokerTx1 len  1791
+Supervisor: 2026/03/06 19:36:33 committee_clpa_broker.go:263: received from shard 0 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx2 len  13
+finish ctx with adding tx1 and tx2 to txpool,len 13
+Supervisor: 2026/03/06 19:36:33 committee_clpa_broker.go:263: received from shard 1 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx1 len  327
+Supervisor: 2026/03/06 19:36:34 committee_clpa_broker.go:263: received from shard 2 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx2 len  24
+finish ctx with adding tx1 and tx2 to txpool,len 24
+Supervisor: 2026/03/06 19:36:34 committee_clpa_broker.go:263: received from shard 3 in epoch 4. (curEpoch=4)
+broker tx2 add to pool len  327
+receive confirm  brokerTx2 len  9
+finish ctx with adding tx1 and tx2 to txpool,len 9
+Supervisor: 2026/03/06 19:36:37 committee_clpa_broker.go:263: received from shard 0 in epoch 4. (curEpoch=4)
+Supervisor: 2026/03/06 19:36:37 committee_clpa_broker.go:263: received from shard 1 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx2 len  199
+finish ctx with adding tx1 and tx2 to txpool,len 199
+Supervisor: 2026/03/06 19:36:38 committee_clpa_broker.go:263: received from shard 2 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx1 len  538
+Supervisor: 2026/03/06 19:36:38 committee_clpa_broker.go:263: received from shard 3 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx1 len  410
+broker tx2 add to pool len  538
+broker tx2 add to pool len  410
+receive confirm  brokerTx2 len  13
+finish ctx with adding tx1 and tx2 to txpool,len 13
+broker receive ctx  1648
+BrokerType1Mes received by shard,  add brokerTx1 len  1648
+Supervisor: 2026/03/06 19:36:41 committee_clpa_broker.go:263: received from shard 0 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx1 len  441
+Supervisor: 2026/03/06 19:36:41 committee_clpa_broker.go:263: received from shard 1 in epoch 4. (curEpoch=4)
+Supervisor: 2026/03/06 19:36:42 committee_clpa_broker.go:263: received from shard 2 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx2 len  167
+finish ctx with adding tx1 and tx2 to txpool,len 167
+Supervisor: 2026/03/06 19:36:42 committee_clpa_broker.go:263: received from shard 3 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx1 len  200
+broker tx2 add to pool len  441
+receive confirm  brokerTx2 len  10
+finish ctx with adding tx1 and tx2 to txpool,len 10
+broker tx2 add to pool len  200
+receive confirm  brokerTx2 len  121
+finish ctx with adding tx1 and tx2 to txpool,len 121
+Supervisor: 2026/03/06 19:36:45 committee_clpa_broker.go:263: received from shard 0 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx1 len  122
+Supervisor: 2026/03/06 19:36:45 committee_clpa_broker.go:263: received from shard 1 in epoch 4. (curEpoch=4)
+receive confirm  brokerTx2 len  11
+finish ctx with adding tx1 and tx2 to txpool,len 11
+Supervisor: 2026/03/06 19:36:46 committee_clpa_broker.go:263: received from shard 2 in epoch 4. (curEpoch=4)
+Supervisor: 2026/03/06 19:36:46 committee_clpa_broker.go:263: received from shard 3 in epoch 4. (curEpoch=4)
+broker tx2 add to pool len  122
+receive confirm  brokerTx2 len  117
+finish ctx with adding tx1 and tx2 to txpool,len 117
+Supervisor: 2026/03/06 19:36:49 committee_clpa_broker.go:185: [DEBUG] CLPA timer fired! elapsed=18.4020844s, clpaFreq=10 s, triggering partition clpaCnt=5
+Before running CLPA, cross-shard edge number: 2242
+0 has vertexs: 1194
+1 has vertexs: 1291
+2 has vertexs: 1217
+3 has vertexs: 1205
+After running CLPA, cross-shard edge number: 191
+Supervisor: 2026/03/06 19:36:49 committee_clpa_broker.go:251: Supervisor: all partition map message has been sent. 
+Supervisor: 2026/03/06 19:36:49 committee_clpa_broker.go:197: [DEBUG] Waiting for curEpoch to reach 5 (current=4)
+broker receive ctx  111
+Supervisor: 2026/03/06 19:36:50 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=4, target=5
+broker receive ctx  93
+broker receive ctx  27
+broker receive ctx  74
+BrokerType1Mes received by shard,  add brokerTx1 len  111
+Supervisor: 2026/03/06 19:36:51 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=4, target=5
+BrokerType1Mes received by shard,  add brokerTx1 len  93
+BrokerType1Mes received by shard,  add brokerTx1 len  27
+BrokerType1Mes received by shard,  add brokerTx1 len  74
+Supervisor: 2026/03/06 19:36:52 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=4, target=5
+Supervisor: 2026/03/06 19:36:53 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=4, target=5
+Supervisor: 2026/03/06 19:36:53 committee_clpa_broker.go:263: received from shard 0 in epoch 5. (curEpoch=4)
+Supervisor: 2026/03/06 19:36:53 committee_clpa_broker.go:265: [DEBUG] curEpoch updated to 5 by shard 0
+Supervisor: 2026/03/06 19:36:53 committee_clpa_broker.go:263: received from shard 1 in epoch 5. (curEpoch=5)
+receive confirm  brokerTx1 len  368
+Supervisor: 2026/03/06 19:36:54 committee_clpa_broker.go:263: received from shard 2 in epoch 5. (curEpoch=5)
+receive confirm  brokerTx2 len  4
+finish ctx with adding tx1 and tx2 to txpool,len 4
+Supervisor: 2026/03/06 19:36:54 committee_clpa_broker.go:200: [DEBUG] Still waiting... curEpoch=5, target=5
+Supervisor: 2026/03/06 19:36:54 committee_clpa_broker.go:203: Next CLPA epoch begins. 
+Supervisor: 2026/03/06 19:36:54 committee_clpa_broker.go:263: received from shard 3 in epoch 5. (curEpoch=5)
+receive confirm  brokerTx2 len  6
+finish ctx with adding tx1 and tx2 to txpool,len 6
+broker tx2 add to pool len  368
+receive confirm  brokerTx2 len  235
+finish ctx with adding tx1 and tx2 to txpool,len 235
+Supervisor: 2026/03/06 19:36:57 committee_clpa_broker.go:263: received from shard 0 in epoch 5. (curEpoch=5)
+receive confirm  brokerTx2 len  3
+finish ctx with adding tx1 and tx2 to txpool,len 3
+Supervisor: 2026/03/06 19:36:58 committee_clpa_broker.go:263: received from shard 1 in epoch 5. (curEpoch=5)
+Supervisor: 2026/03/06 19:36:58 committee_clpa_broker.go:263: received from shard 2 in epoch 5. (curEpoch=5)
+receive confirm  brokerTx1 len  382
